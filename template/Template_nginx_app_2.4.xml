@@ -156,7 +156,7 @@
                     <snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>
-                    <key>nginx.ping</key>
+                    <key>nginx.ping[{HOST.HOST}]</key>
                     <delay>30</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -470,7 +470,7 @@
             <dependencies>
         </dependencies></description></url></trigger>
         <trigger>
-            <expression>{Template APP nginx:nginx.ping.min(#10)}>0.01</expression>
+            <expression>{Template APP nginx:nginx.ping[{HOST.HOST}].min(#10)}>0.01</expression>
             <name>Nginx is slow to respond on {HOST.NAME}</name>
             <url>
             <status>0</status>
@@ -480,7 +480,7 @@
             <dependencies>
         </dependencies></description></url></trigger>
         <trigger>
-            <expression>{Template APP nginx:nginx.ping.last()}&lt;0</expression>
+            <expression>{Template APP nginx:nginx.ping[{HOST.HOST}].last()}&lt;0</expression>
             <name>Nginx responce is invalid on {HOST.NAME}</name>
             <url>
             <status>0</status>
@@ -518,7 +518,7 @@
                     <type>0</type>
                     <item>
                         <host>Template APP nginx</host>
-                        <key>nginx.ping</key>
+                        <key>nginx.ping[{HOST.HOST}]</key>
                     </item>
                 </graph_item>
             </graph_items>
