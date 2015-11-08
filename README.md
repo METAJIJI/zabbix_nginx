@@ -21,7 +21,7 @@ yum install time wget
 ```
 mkdir /etc/zabbix/scripts
 chown zabbix:zabbix /etc/zabbix/scripts
-cp zabbix/scripts/nginx.sh /etc/zabbix/scripts
+cp zabbix/scripts/nginx_status.sh /etc/zabbix/scripts
 cp nginx/nginx_status_http.conf /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/nginx_status_http.conf /etc/nginx/sites-enabled/nginx_status_http.conf
 service nginx reload
