@@ -26,17 +26,17 @@
                     <name>Nginx accepts per second</name>
                     <type>2</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
+                    <multiplier>1</multiplier>
                     <snmp_oid/>
                     <key>nginx.accepts</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
+                    <units>r/s</units>
+                    <delta>1</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -110,17 +110,17 @@
                     <name>Nginx handled per second</name>
                     <type>2</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
+                    <multiplier>1</multiplier>
                     <snmp_oid/>
                     <key>nginx.handled</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
+                    <units>r/s</units>
+                    <delta>1</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -155,7 +155,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>nginx.ping[{HOST.HOST}]</key>
-                    <delay>60</delay>
+                    <delay>2</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -327,10 +327,10 @@
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
+                    <units>r/s</units>
+                    <delta>1</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
